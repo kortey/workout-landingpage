@@ -1,38 +1,154 @@
-.App {
-  text-align: center;
+header{
+    z-index: 100;
+}
+.menu{
+    display: flex;
+    gap: 30px;
+}
+.mobile-menu{
+    display: none;
+}
+.nav-btn{
+    border-bottom-right-radius: 10px;
+    padding: 10px 10px;
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@media (max-width:600px) {
+    .menu{
+        display:none
+    }
+    .mobile-menu{
+        display: flex;
+    }
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.button-tag{
+    background: #000;
+    border-radius: 20px;
+    display: flex ;
+    padding: 10px 5px;
+}
+.button-tag span{
+    font-size: 10px;
+    background: #0ef;
+    padding: 2px 10px;
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+    margin: 0 5px;
+}
+.button-tag p{
+    font-size: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn-colored{
+    padding: 7px 10px;
+    background: #0ef;
+    border-bottom-right-radius: 10px;
+    color: black;
+    transition: 0.5s ease-out;
+    cursor: pointer;
+}
+.btn-colored:hover{
+    background: transparent;
+    border: 1px solid #0ef;
+    color: white;
+}
+.btn-noncolored{
+    padding: 7px 10px;
+    background: transparent;
+    border-bottom-right-radius: 10px;
+    color: white;
+    transition: 0.5s ease-out;
+    border: 1px solid #0ef;
+    cursor: pointer;
+}
+.btn-noncolored:hover{
+    background: #0ef;
+    color: black;
 }
 
-.App-link {
-  color: #61dafb;
+.hero-right img{
+    z-index: 100;
+    margin-left:-100px ;
+}
+.green-square{
+    z-index: -100;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media (max-width:850px) {
+    .hero-right{
+        display: none;
+    }
+
+}
+
+.programs-card{
+    border:1px solid #0ef;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+}
+
+.programs-card:hover{
+    background: #0ef;
+    color: black;
+}
+.programs-card:nth-child(3){
+ background: #0ef;
+ color: #000;
+ border-bottom-right-radius: 10px;
+}
+.programs-card:nth-child(3):hover{
+    border:1px solid #0ef;
+    background: transparent;
+    color: white;
+}
+
+.why-us{
+    vertical-align: top;
+}
+
+.pricing-btn{
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+}
+.pricing-btn:hover{
+   color:#000;
+   background: #fff;
+}
+
+.pricing-card{
+    border: 1px solid #0ef;
+    padding: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.contact-input{
+    background: black;
+    padding: 10px 20px;
+}
+.contact-input input{
+    background: transparent;
+    outline: none;
+}
+.contact-btn{
+    color: black;
+    background: #0ef;
+    border-bottom-right-radius: 10px;
+    padding: 5px 10px;
+}
+
+.swiper-button-next::after{
+    color: #0ef;
+}
+.swiper-button-prev::after{
+    color: #0ef;
+}
+
+.active{
+    color:#0ef;
 }
